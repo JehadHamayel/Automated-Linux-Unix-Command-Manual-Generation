@@ -1,0 +1,31 @@
+
+[1mgrep Command:[0m
+________________	_________________________________________________________________________________________________________________________________________________________________________________________________
+[1mNAME[0m               	 grep, egrep, fgrep, rgrep - print lines that match patterns
+
+________________	_________________________________________________________________________________________________________________________________________________________________________________________________
+[1mDESCRIPTION[0m	        grep searches for PATTERNS in each FILE. PATTERNS is one or more patterns separated by newline characters, and
+		        grep prints each line that matches a pattern. Typically PATTERNS should be quoted when grep is used in a shell
+		        
+		        command.
+		        
+		        A FILE of “-” stands for standard input. If no FILE is given, recursive searches examine the working
+		        
+		        directory, and nonrecursive searches read standard input.
+		        
+		        In addition, the variant programs egrep, fgrep and rgrep are the same as grep -E, grep -F, and grep -r,
+		        
+		        respectively. These variants are deprecated, but are provided for backward compatibility.
+		        
+________________	_________________________________________________________________________________________________________________________________________________________________________________________________
+[1mVERSION[0m			grep (GNU grep) 3.7
+________________	_________________________________________________________________________________________________________________________________________________________________________________________________
+[1mEXAMPLE[0m			echo -e "The Israeli occupation is a brutal occupation\\nJerusalem is Palestines capital\\nIsrael is a war criminal" > Data1.txt 
+			grep "Israel" Data1.txt
+________________	_________________________________________________________________________________________________________________________________________________________________________________________________
+[1mOUTPUT[0m			Israel:
+			The Israeli occupation is a brutal occupation
+			Israel is a war criminal
+________________	_________________________________________________________________________________________________________________________________________________________________________________________________
+[1mRelated Commands[0m        awk, cmp, diff, find, perl, sed, sort, xargs, read,
+	                pcre, pcresyntax, pcrepat‐

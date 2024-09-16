@@ -1,0 +1,37 @@
+
+[1mcolumn Command:[0m
+________________	_________________________________________________________________________________________________________________________________________________________________________________________________
+[1mNAME[0m               	 column - columnate lists
+
+________________	_________________________________________________________________________________________________________________________________________________________________________________________________
+[1mDESCRIPTION[0m	        The column utility formats its input into multiple columns. The util support three modes:
+		        columns are filled before rows
+		        
+		        This is the default mode (required by backward compatibility).
+		        
+		        rows are filled before columns
+		        
+		        This mode is enabled by option -x, --fillrows
+		        
+		        table
+		        
+		        Determine the number of columns the input contains and create a table. This mode is enabled by option -t,
+		        
+		        --table and columns formatting is possible to modify by --table-* options. Use this mode if not sure.
+		        
+		        Input is taken from file, or otherwise from standard input. Empty lines are ignored and all invalid multibyte
+		        
+		        sequences are encoded by x<hex> convention.
+		        
+________________	_________________________________________________________________________________________________________________________________________________________________________________________________
+[1mVERSION[0m			column from util-linux 2.37.2
+________________	_________________________________________________________________________________________________________________________________________________________________________________________________
+[1mEXAMPLE[0m			echo -e "NAME: ID:\\nJehadHamayel 1200348\\nBasheerArouri 1201141" > data.txt
+			column -t data.txt
+________________	_________________________________________________________________________________________________________________________________________________________________________________________________
+[1mOUTPUT[0m			NAME:          ID:
+			JehadHamayel   1200348
+			BasheerArouri  1201141
+________________	_________________________________________________________________________________________________________________________________________________________________________________________________
+[1mRelated Commands[0m        colrm, ls, paste, sort
+	                

@@ -1,0 +1,22 @@
+
+[1msed Command:[0m
+________________	_________________________________________________________________________________________________________________________________________________________________________________________________
+[1mNAME[0m               	 sed - stream editor for filtering and transforming text
+
+________________	_________________________________________________________________________________________________________________________________________________________________________________________________
+[1mDESCRIPTION[0m	        Sed is a stream editor. A stream editor is used to perform basic text transformations on an input stream (a
+		        file or input from a pipeline). While in some ways similar to an editor which permits scripted edits (such as
+		        
+		        ed), sed works by making only one pass over the input(s), and is consequently more efficient. But it is sed's
+		        
+________________	_________________________________________________________________________________________________________________________________________________________________________________________________
+[1mVERSION[0m			sed (GNU sed) 4.8
+________________	_________________________________________________________________________________________________________________________________________________________________________________________________
+[1mEXAMPLE[0m			echo -e "Israel:\\nThe Israeli occupation is a brutal occupation\\nIsrael is a war criminal\\nPalestine:\\nJerusalem is Palestines capital" > Data1.txt 
+			sed -n "2,3p" Data1.txt
+________________	_________________________________________________________________________________________________________________________________________________________________________________________________
+[1mOUTPUT[0m			The Israeli occupation is a brutal occupation
+			Israel is a war criminal
+________________	_________________________________________________________________________________________________________________________________________________________________________________________________
+[1mRelated Commands[0m        awk, ed, grep, tr, perlre, sed.info, any of various
+	                books on sed, the sed FAQ

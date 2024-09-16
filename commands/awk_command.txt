@@ -1,0 +1,24 @@
+
+[1mawk Command:[0m
+________________	_________________________________________________________________________________________________________________________________________________________________________________________________
+[1mNAME[0m               	 gawk - pattern scanning and processing language
+
+________________	_________________________________________________________________________________________________________________________________________________________________________________________________
+[1mDESCRIPTION[0m	        Gawk is the GNU Project's implementation of the AWK programming language. It conforms to the definition of the
+		        language in the POSIX 1003.1 standard. This version in turn is based on the description in The AWK Programming
+		        
+		        Language, by Aho, Kernighan, and Weinberger. Gawk provides the additional features found in the current ver‐
+		        
+________________	_________________________________________________________________________________________________________________________________________________________________________________________________
+[1mVERSION[0m			GNU Awk 5.1.0
+________________	_________________________________________________________________________________________________________________________________________________________________________________________________
+[1mEXAMPLE[0m			echo -e "Israel:\\nThe Israeli occupation is a brutal occupation\\nIsrael is a war criminal\\nPalestine:\\nJerusalem is Palestines capital" > Data1.txt 
+			awk /^Israel:$/,/^Palestine:$/ Data1.txt
+________________	_________________________________________________________________________________________________________________________________________________________________________________________________
+[1mOUTPUT[0m			Israel:
+			The Israeli occupation is a brutal occupation
+			Israel is a war criminal
+			Palestine:
+________________	_________________________________________________________________________________________________________________________________________________________________________________________________
+[1mRelated Commands[0m        egrep, sed, getpid, getppid, getpgrp, getuid, geteuid, getgid, getegid,
+	                get‐

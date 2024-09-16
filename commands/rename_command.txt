@@ -1,0 +1,36 @@
+
+[1mrename Command:[0m
+________________	_________________________________________________________________________________________________________________________________________________________________________________________________
+[1mNAME[0m               	 rename - renames multiple files
+
+________________	_________________________________________________________________________________________________________________________________________________________________________________________________
+[1mDESCRIPTION[0m	        "rename" renames the filenames supplied according to the rule specified as the first argument. The perlexpr
+		        argument is a Perl expression which is expected to modify the $_ string in Perl for at least some of the
+		        
+		        filenames specified. If a given filename is not modified by the expression, it will not be renamed. If no
+		        
+		        filenames are given on the command line, filenames will be read via standard input.
+		        
+________________	_________________________________________________________________________________________________________________________________________________________________________________________________
+[1mVERSION[0m			File::Rename version 1.30
+________________	_________________________________________________________________________________________________________________________________________________________________________________________________
+[1mEXAMPLE[0m			touch File1.csv
+			touch File2.csv
+			ls File1.csv > /dev/null 2>&1
+			echo $?
+			ls File2.csv > /dev/null 2>&1
+			echo $?
+			rename s/.csv$/.txt/ *.csv
+			ls File1.csv > /dev/null 2>&1
+			echo $?
+			ls File2.csv > /dev/null 2>&1
+			echo $?
+			ls File1.txt > /dev/null 2>&1
+			echo $?
+			ls File2.txt > /dev/null 2>&1
+			echo $?
+________________	_________________________________________________________________________________________________________________________________________________________________________________________________
+[1mOUTPUT[0m			output1,2(echo $?):0,0, output3,4(echo $?):2,2, output5,6(echo $?):0,0
+________________	_________________________________________________________________________________________________________________________________________________________________________________________________
+[1mRelated Commands[0m        mv, perl
+	                
